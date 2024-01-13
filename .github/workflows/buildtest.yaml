@@ -3,11 +3,9 @@ on: push
 jobs:
   build:
   steps:
-    - checkout
     - run: mvn clean package
     - run: echo "BUILD SUCCESS"
-test:
+  test:
   steps:
-    - checkout
     - run: mvn test
     - run: echo "TEST SUCCESS"
