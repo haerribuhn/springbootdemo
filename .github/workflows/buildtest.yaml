@@ -15,4 +15,3 @@ jobs:
         run: mvn -B package --file pom.xml
       - name: Deploy tu github pages
         uses: actions/deploy-pages@v4
-        run: gh-pages deploy
