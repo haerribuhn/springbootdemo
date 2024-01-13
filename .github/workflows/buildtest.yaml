@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build with maven
-        run: mvn clean package
+        run: mvn -B verify --file pom.xml
