@@ -6,7 +6,7 @@ jobs:
     - checkout
     - run: mvn clean package
     - run: echo "BUILD SUCCESS"
-  test:
+test:
   steps:
     - checkout
     - run: mvn test
