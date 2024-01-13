@@ -2,6 +2,7 @@ name: Build and Test Java Spring Boot Application
 on: push
 jobs:
   build:
+    runs-on: ubuntu-latest
     steps:
       - name: Build with maven
         run: mvn clean package
