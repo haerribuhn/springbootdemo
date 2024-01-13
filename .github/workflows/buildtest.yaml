@@ -5,7 +5,3 @@ jobs:
   steps:
     - run: mvn clean package
     - run: echo "BUILD SUCCESS"
-  test:
-  steps:
-    - run: mvn test
-    - run: echo "TEST SUCCESS"
