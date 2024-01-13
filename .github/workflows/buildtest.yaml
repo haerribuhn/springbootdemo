@@ -12,4 +12,6 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Build with maven
-        run: mvn -B test --file pom.xml
+        run: mvn -B package --file pom.xml
+      - name: Deploy tu github pages
+        run: gh-pages deploy
